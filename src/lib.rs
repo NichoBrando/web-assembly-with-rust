@@ -12,5 +12,5 @@ pub fn do_sum(x: u32, y: u32) -> u32 {
 
 #[wasm_bindgen]
 pub fn show_alert(message: &str) {
-    alert(message);
+    alert(&format!("Your result is: {}", &message));
 }
