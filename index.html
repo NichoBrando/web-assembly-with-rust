@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hello-wasm example</title>
+  </head>
+  <body>
+    <script type="module">
+      import init, {show_alert, do_sum} from "./pkg/rust_code.js";
+      init()
+        .then(() => {
+          show_alert(do_sum(5, 3).toString());
+        });
+      </script>
+  </body>
+</html>
