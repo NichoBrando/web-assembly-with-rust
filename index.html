@@ -6,7 +6,7 @@
   </head>
   <body>
     <script type="module">
-      import init, {show_alert, do_sum} from "./pkg/rust_code.js";
+      import init, {show_alert, do_sum} from "./pkg/wasm_test.js";
       init()
         .then(() => {
           show_alert(do_sum(5, 3).toString());
